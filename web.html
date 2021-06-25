@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example code</title>
+    </head>
+    <style>
+        body{
+            background-color: steelblue;
+        }
+        h1{
+           text-align: center; 
+           background-color: darkgreen;
+           border-radius: 15px;
+        
+        }
+       
+        #box4{
+            /* List all Containers */
+            margin:20;
+            border:2px solid rgb(5, 5, 219);
+
+            float:right;
+            width:275px;
+            height:250px;
+            text-align: center;
+            background-color: crimson;
+        
+            
+        }
+     
+       #box
+       /* Launch container box  */
+       {
+       border:5px solid navy;
+       background-color: darkgreen;
+       padding:10px;
+       width:250px;
+       height:250px;
+       text-align: center;
+       overflow:hidden;
+       background-color: mediumvioletred;
+       } 
+      */
+       a:hover{
+           background-color:rgb(54, 40, 245);
+           color:rgb(140, 0, 205);
+       }
+       #box1
+       /* Delete container box */
+       {
+
+       float:right;
+       border:5px solid navy;
+       background-color: rgb(11, 199, 216);
+       padding:10px;
+       width:250px;
+       height:250px;
+
+       text-align: center;
+       }  
+       #box1 a:hover{
+           background-color:blue;
+           color:rgb(140, 0, 205);
+       }
+       #box5{
+           /* Output box  */
+           position: absolute;
+           left: 400px;
+           right: 350px;
+      
+	   height: wrap-content;
+	   width: cover;
+	   block-size: wrap-content;
+	   overflow-y: hidden;
+           
+           top: 150px;
+           width:700px;
+           height:450px;
+           text-align: center;
+           border-radius: 35px;
+           background-color: rgb(0, 87, 250);
+       }
+
+       #box2
+       /* List all images....  */
+       {
+       float:left;
+       border:5px solid rgb(5, 5, 219);
+       background-color: rgb(69, 129, 34);
+       padding:10px;
+       width:250px;
+       height:250px;
+       text-align: center;
+       }  
+       #box2 a:hover{
+           background-color:blue;
+           color:rgb(140, 0, 205);
+       }
+        
+      
+       .test1{
+       height: 200px;
+       width : 400px;
+       background-color:yellow;}
+   
+   </style>
+
+
+<script src="class.js">
+
+</script>
+
+    <body>
+        
+        <h1><u>DOCKER USING GUI</u></h1>
+        
+        <div id="box1">
+        
+            <h2>Delete Container</h2>
+              Container name<input  id="contd" type="text"/><br/><br/>
+              <button onclick="del();"> Delete </button>
+              
+        </div>
+        <div id="box5">
+            <h3><u>Output comes  Here</u></h3>
+	    <input id="mi" type="text" size=75/><br/><br/>
+	    <button  onclick="lwa();"> Submit  </button>
+	    <div id="output"  draggable="true"><pre>My Output is Here</pre> </div>
+            
+            
+        </div>
+           
+       <div id="box">
+           
+           <h2>Create  Container</h2>
+            Container name<input  id="cname"  type="text" /><br/><br/>
+	    Image name<br/><br/><input id="imgname"   type="text"  /><br/><br/>
+
+             <button onclick="create();">  Create  </button>
+        
+           
+        </div>
+       
+            <div id="box4">
+		   
+                <h2>List all Container</h2>
+                <p>This would be the List of all containers(running & stoped)</p>
+                <button onclick="list_container();" > Click me </button>
+		</div>
+            </div>
+        
+    
+        <div id="box2">
+            <h2>List all Images </h2>
+            <p>This would the List of all the imgaes )</p>
+            <button onclick="list_image();"> Click me </button>
+        </div>
+          
+    </body>
+</html>
+
+
